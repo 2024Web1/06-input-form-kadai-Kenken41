@@ -18,10 +18,16 @@
         * メロン
     * 送信ボタンには名前 `submit` を付与する
 -->
-<h4><!-- 出席番号 氏名 --></h4>
+<h4>プルダウン練習課題</h4>
+<form action="pulldown.php" method="post">
+    <p>あなたの好きなフルーツを選んでください。</p>
+    <label for="fruit">フルーツ:</label>
+    <select id="fruit" name="fruit">
+        <option value="オレンジ">オレンジ</option>
+        <option value="リンゴ">リンゴ</option>
+        <option value="メロン">メロン</option>
+    </select>
+    <input type="submit" name="submit" value="送信">
+</form>
 
-<!-- フォームコードは以下に記述-->
-
-<!-- ここまで -->
-</body>
 </html>

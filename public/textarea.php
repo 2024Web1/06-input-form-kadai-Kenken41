@@ -7,16 +7,20 @@
 </head>
 <body>
 <!--
-* H4タグに自分の`出席番号 氏名`を入れる
 * フォームとして受け取った`input_text`の値を出力する
     * 出力するテキストはpタグでくくる
 
 -->
-<h4><!-- 出席番号 氏名--></h4>
+<h4>テキストエリア練習課題</h4>
 <?php
-    // PHPのコードは以下に記述
-
+    if (isset($_POST['input_text'])) {
+        $input_text = htmlspecialchars($_POST['input_text'], ENT_QUOTES, 'UTF-8');
+        echo "<p>入力された文章は、つぎのとおりです。</p>";
+        echo "<p>{$input_text}</p>";
+    } else {
+        echo "<p>テキストが入力されていません。</p>";
+    }
     ?>
-
+    <button onclick="history.back()">戻る</button>
 </body>
 </html>

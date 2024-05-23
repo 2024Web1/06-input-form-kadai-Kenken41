@@ -8,21 +8,16 @@
 </head>
 
 <body>
-
-    <!--
-    * H4タグに自分の`出席番号 氏名`を入れる
-    * フォームとして受け取った`user`,`pass`の値をそれぞれPHPの命令で出力する
-        * それぞれを**pタグでくくる**こと
-        * 「入力されたユーザーIDは、XXXX(`user`の値)です」
-        * 「入力されたパスワードは、XXXX(`pass`の値)です」
--->
-
-    <h4><!-- 出席番号 氏名 --></h4>
+    <h4>0J01005 大西健介</h4>
 
     <?php
-    // PHPのコードは以下に記述
+  $user = $_POST['user'];
+  $pass = $_POST['pass'];
+  ?>
 
-    ?>
+  <p>入力されたユーザーIDは、<?php echo $user; ?>です。</p>
+  <p>入力されたパスワードは、<?php echo $pass; ?>です。</p>
+  <button onclick="history.back()">戻る</button>
 </body>
 
 </html>

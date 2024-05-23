@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>テキストエリアの練習問題</title>
 </head>
-<body>
+    <body>
 <!--
 * H4タグに自分の `出席番号 氏名` を入れる
 * フォームの送り先を `textarea.php` に設定する
@@ -14,10 +14,11 @@
     * 入力テキストの渡される変数名を `input_text` とする
     * 送信ボタンには名前 `submit` を付与する
 -->
-<h4>出席番号 氏名</h4>
-<!-- フォームコードは以下に記述-->
-
-<!-- ここまで -->
-
-</body>
+    <h4>テキストエリア練習課題</h4>
+        <form action="textarea.php" method="post">
+            <label for="input_text">テキストを入力してください：</label><br>
+            <textarea name="input_text" id="input_text" cols="50" rows="4"></textarea><br>
+            <button type="submit" name="submit">送信</button>
+        </form>
+    </body>
 </html>
