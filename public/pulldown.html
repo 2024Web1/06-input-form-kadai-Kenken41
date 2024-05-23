@@ -6,27 +6,15 @@
     <title>プルダウンの練習</title>
 </head>
 <body>
-
-<!--
-* H4タグに自分の `出席番号 氏名` を入れる
-* フォームの送り先を `pulldown.php` に設定する
-* 入力フォームとして、以下のものを設定する
-    * 入力された値は変数名fruitに入る
-    * 果物(fruit)の候補として、以下の値を挿入すること(順番は気にしないでよい)
-        * オレンジ
-        * リンゴ
-        * メロン
-    * 送信ボタンには名前 `submit` を付与する
--->
-<h4>プルダウン練習課題</h4>
-<form action="pulldown.php" method="post">
-    <p>あなたの好きなフルーツを選んでください。</p>
-    <label for="fruit">フルーツ:</label>
-    <select id="fruit" name="fruit">
-        <option value="オレンジ">オレンジ</option>
-        <option value="リンゴ">リンゴ</option>
-        <option value="メロン">メロン</option>
-    </select>
+    <h4>プルダウン練習課題</h4>
+    <form action="pulldown.php" method="post">
+        <p>あなたの好きなフルーツを選んでください。</p>
+        <label for="fruit">フルーツ:</label>
+        <select id="fruit" name="fruit">
+            <option value="オレンジ">オレンジ</option>
+            <option value="リンゴ">リンゴ</option>
+            <option value="メロン">メロン</option>
+        </select>
     <input type="submit" name="submit" value="送信">
 </form>
 
