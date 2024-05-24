@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <h4>0J01005 大西健介</h4>
 
     <?php
     $user = $_POST['user'];
@@ -17,7 +16,7 @@
 
     <p>入力されたユーザーIDは、<?php echo $user; ?>です。</p>
     <p>入力されたパスワードは、<?php echo $pass; ?>です。</p>
-    <button onclick="history.back()">戻る</button>
+    <button class="underline-button" onclick="history.back()">戻る</button>
 </body>
 
 </html>

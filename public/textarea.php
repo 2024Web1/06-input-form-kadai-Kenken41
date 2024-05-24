@@ -16,6 +16,6 @@
             echo "<p>テキストが入力されていません。</p>";
         }
     ?>
-    <button onclick="history.back()">戻る</button>
+    <button class="underline-button" onclick="history.back()">戻る</button>
 </body>
 </html>

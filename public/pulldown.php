@@ -10,6 +10,6 @@
             $fruit = $_POST['fruit'];
         ?>
         <p>あなたの好きなフルーツは、<?php echo $fruit; ?>ですね。</p>
-        <button onclick="history.back()">戻る</button>
+        <button class="underline-button" onclick="history.back()">戻る</button>
     </body>
 </html>
